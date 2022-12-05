@@ -1,0 +1,21 @@
+type: client
+colorHex: #aabbcc
+shape: RECTANGLE
+request: getEcho
+direction: BIDIRECTIONAL
+componentList:
+  - type: controller
+    colorHex: #ababab
+    className: OneEntropyController
+    methodName: routeEcho
+    response: EchoResponse
+    shape: RECTANGLE
+    direction: BIDIRECTIONAL
+    componentList:
+      - type: service
+        colorHex: #ababab
+        className: OneEntropyServiceImpl
+        methodName: getEcho
+        response: EchoResponse
+        shape: RECTANGLE
+        direction: BIDIRECTIONAL
